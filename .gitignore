@@ -2,8 +2,8 @@ bin
 obj
 .DS_Store
 *.bak
-#[Aa]pp.config
-#[Ww]eb.config
+[Aa]pp.config
+[Ww]eb.config
 
 
 # Windows image file caches

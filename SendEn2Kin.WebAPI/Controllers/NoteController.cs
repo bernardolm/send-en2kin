@@ -80,14 +80,14 @@ namespace SendEn2Kin.WebAPI.Controllers
 
 			var mailMessage = new MailMessage
 			{
-				Body = evernoteFacade.ENMLtoHTML(note.Content),
+				Body = ENML2HTMLParser.DoWork(note),
 				BodyEncoding = new UTF8Encoding(true),
 				//IsBodyHtml = true,
 				Subject = note.Title
 			};
 
 			var attachment = Attachment.CreateAttachmentFromString(
-				evernoteFacade.ENMLtoHTML(note.Content), 
+				ENML2HTMLParser.DoWork(note), 
 				note.Title + ".htm", 
 				new UTF8Encoding(true), 
 				"text/html");

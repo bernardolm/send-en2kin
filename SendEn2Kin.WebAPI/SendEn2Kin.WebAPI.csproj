@@ -49,6 +49,9 @@
     <Reference Include="Evernote">
       <HintPath>..\external\Evernote.dll</HintPath>
     </Reference>
+    <Reference Include="HtmlAgilityPack">
+      <HintPath>..\packages\HtmlAgilityPack.1.4.6\lib\Net45\HtmlAgilityPack.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
@@ -100,6 +103,7 @@
     <Compile Include="Controllers\NoteController.cs" />
     <Compile Include="DTO\NotebookDTO.cs" />
     <Compile Include="DTO\NoteDTO.cs" />
+    <Compile Include="ENML2HTMLParser.cs" />
     <Compile Include="EvernoteFacade.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
